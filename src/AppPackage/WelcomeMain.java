@@ -29,7 +29,6 @@ public class WelcomeMain extends javax.swing.JFrame {
 
         staffLoginButton = new javax.swing.JButton();
         customerLoginButton = new javax.swing.JButton();
-        gmeLogoLabel = new javax.swing.JLabel();
         quoteLabel = new javax.swing.JLabel();
         titleLabel = new javax.swing.JLabel();
         categoryComboBox = new javax.swing.JComboBox();
@@ -46,6 +45,8 @@ public class WelcomeMain extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         priceSlider = new javax.swing.JSlider();
+        homeButton = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Welcome to GME");
@@ -63,11 +64,12 @@ public class WelcomeMain extends javax.swing.JFrame {
 
         customerLoginButton.setText("Customer Login");
         customerLoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        customerLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerLoginButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(customerLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 0, 127, -1));
-
-        gmeLogoLabel.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
-        gmeLogoLabel.setText("GME");
-        getContentPane().add(gmeLogoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 90, 40));
 
         quoteLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         quoteLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -130,6 +132,16 @@ public class WelcomeMain extends javax.swing.JFrame {
         priceSlider.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(priceSlider, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, -1, -1));
 
+        homeButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        homeButton.setText("GME");
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 10, 10));
+
         setSize(new java.awt.Dimension(836, 635));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -143,6 +155,18 @@ public class WelcomeMain extends javax.swing.JFrame {
        obj.setVisible(true);
             this.dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_staffLoginButtonActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        WelcomeMain obj = new WelcomeMain();
+        obj.setVisible(true);
+        this.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_homeButtonActionPerformed
+
+    private void customerLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerLoginButtonActionPerformed
+        CustomerLogin obj = new CustomerLogin();
+        obj.setVisible(true);
+            this.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_customerLoginButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +207,7 @@ public class WelcomeMain extends javax.swing.JFrame {
     private javax.swing.JComboBox categoryComboBox;
     private javax.swing.JButton customerLoginButton;
     private javax.swing.JComboBox displayAmountComboBox;
-    private javax.swing.JLabel gmeLogoLabel;
+    private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -194,6 +218,7 @@ public class WelcomeMain extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSlider priceSlider;
     private javax.swing.JLabel quoteLabel;
     private javax.swing.JComboBox sortComboBox;

@@ -27,34 +27,31 @@ public class StaffLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        gmeLogoLabel = new javax.swing.JLabel();
         staffLoginLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        staffUsernameLabel = new javax.swing.JLabel();
+        staffPasswordLabel = new javax.swing.JLabel();
         staffUsernameTextField = new javax.swing.JTextField();
         staffPasswordField = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
+        homeButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Staff Login");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        gmeLogoLabel.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
-        gmeLogoLabel.setText("GME");
-        getContentPane().add(gmeLogoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 90, 40));
-
         staffLoginLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 30)); // NOI18N
         staffLoginLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         staffLoginLabel.setText("Staff Login");
         getContentPane().add(staffLoginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 830, -1));
 
-        jLabel1.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        jLabel1.setText("Username");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+        staffUsernameLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        staffUsernameLabel.setText("Username");
+        getContentPane().add(staffUsernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        jLabel2.setText("Password");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
+        staffPasswordLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        staffPasswordLabel.setText("Password");
+        getContentPane().add(staffPasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
 
         staffUsernameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +66,16 @@ public class StaffLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(staffPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, 190, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 10, 10));
+
+        homeButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        homeButton.setText("GME");
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -81,6 +88,12 @@ public class StaffLogin extends javax.swing.JFrame {
     private void staffPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffPasswordFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_staffPasswordFieldActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        WelcomeMain obj1 = new WelcomeMain();
+        obj1.setVisible(true);
+            this.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_homeButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,11 +131,12 @@ public class StaffLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel gmeLogoLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton homeButton;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel staffLoginLabel;
     private javax.swing.JPasswordField staffPasswordField;
+    private javax.swing.JLabel staffPasswordLabel;
+    private javax.swing.JLabel staffUsernameLabel;
     private javax.swing.JTextField staffUsernameTextField;
     // End of variables declaration//GEN-END:variables
 }
