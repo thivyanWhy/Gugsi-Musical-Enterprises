@@ -34,7 +34,7 @@ public class Hire extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         purchaseStockButton = new javax.swing.JButton();
         transferStockButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        employeeHireLabel = new javax.swing.JLabel();
         employeePhoneNoLabel = new javax.swing.JLabel();
         employeeIDLabel = new javax.swing.JLabel();
         employeeNameLabel = new javax.swing.JLabel();
@@ -110,9 +110,9 @@ public class Hire extends javax.swing.JFrame {
         });
         getContentPane().add(transferStockButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Nanum Myeongjo", 0, 30)); // NOI18N
-        jLabel1.setText("Employee Details");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        employeeHireLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 30)); // NOI18N
+        employeeHireLabel.setText("Employee Details");
+        getContentPane().add(employeeHireLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         employeePhoneNoLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeePhoneNoLabel.setText("Employee Phone No");
@@ -288,6 +288,7 @@ public class Hire extends javax.swing.JFrame {
     private javax.swing.JTextField employeeDOBTextField;
     private javax.swing.JComboBox employeeGenderComboBox;
     private javax.swing.JLabel employeeGenderLabel;
+    private javax.swing.JLabel employeeHireLabel;
     private javax.swing.JLabel employeeIDLabel;
     private javax.swing.JTextField employeeIDTextField;
     private javax.swing.JLabel employeeNICLabel;
@@ -300,7 +301,6 @@ public class Hire extends javax.swing.JFrame {
     private javax.swing.JLabel employeeTitleLabel;
     private javax.swing.JButton hireButton;
     private javax.swing.JButton homeButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JButton purchaseStockButton;
     private javax.swing.JButton signOutButton;

@@ -27,21 +27,166 @@ public class PurchaseStock extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        transferStockButton = new javax.swing.JButton();
+        homeButton = new javax.swing.JButton();
+        hireButton = new javax.swing.JButton();
+        purchaseStockButton = new javax.swing.JButton();
+        stockDetailsButton = new javax.swing.JButton();
+        signOutButton = new javax.swing.JButton();
+        discardHireButton = new javax.swing.JButton();
+        submitHireButton = new javax.swing.JButton();
+        purchaseItemLabel = new javax.swing.JLabel();
+        itemNumberLabel = new javax.swing.JLabel();
+        itemNumberTextField = new javax.swing.JTextField();
+        itemManufacturerLabel = new javax.swing.JLabel();
+        itemManufacturerTextField = new javax.swing.JTextField();
+        itemModelLabel = new javax.swing.JLabel();
+        itemModelTextField = new javax.swing.JTextField();
+        itemQuantityLabel = new javax.swing.JLabel();
+        itemQuantitySpinner = new javax.swing.JSpinner();
+        jLabel3 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Purchase Item");
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        transferStockButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        transferStockButton.setText("Transfer Stock");
+        transferStockButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                transferStockButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(transferStockButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
+
+        homeButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        homeButton.setText("GME");
+        homeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        hireButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        hireButton.setText("Hire");
+        getContentPane().add(hireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
+
+        purchaseStockButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        purchaseStockButton.setText("Purchase");
+        purchaseStockButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                purchaseStockButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(purchaseStockButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, -1));
+
+        stockDetailsButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        stockDetailsButton.setText("Stock Details");
+        stockDetailsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockDetailsButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(stockDetailsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, -1, -1));
+
+        signOutButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        signOutButton.setText("Sign Out");
+        signOutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        signOutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signOutButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(signOutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 0, 127, -1));
+
+        discardHireButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 15)); // NOI18N
+        discardHireButton.setText("Discard");
+        getContentPane().add(discardHireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 580, -1, -1));
+
+        submitHireButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 15)); // NOI18N
+        submitHireButton.setText("Submit");
+        submitHireButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitHireButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(submitHireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 580, -1, -1));
+
+        purchaseItemLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 30)); // NOI18N
+        purchaseItemLabel.setText("Purchase Item");
+        getContentPane().add(purchaseItemLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+
+        itemNumberLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        itemNumberLabel.setText("Item Number");
+        getContentPane().add(itemNumberLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+
+        itemNumberTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        itemNumberTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemNumberTextFieldActionPerformed(evt);
+            }
+        });
+        getContentPane().add(itemNumberTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 320, -1));
+
+        itemManufacturerLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        itemManufacturerLabel.setText("Item Manufacturer");
+        getContentPane().add(itemManufacturerLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
+
+        itemManufacturerTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        getContentPane().add(itemManufacturerTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 320, -1));
+
+        itemModelLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        itemModelLabel.setText("Item Model");
+        getContentPane().add(itemModelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+
+        itemModelTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        getContentPane().add(itemModelTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 320, -1));
+
+        itemQuantityLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        itemQuantityLabel.setText("Item Quantity");
+        getContentPane().add(itemQuantityLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+
+        itemQuantitySpinner.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        getContentPane().add(itemQuantitySpinner, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 296, 320, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 10, 10));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void transferStockButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferStockButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_transferStockButtonActionPerformed
+
+    private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
+        WelcomeMain obj1 = new WelcomeMain();
+        obj1.setVisible(true);
+        this.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_homeButtonActionPerformed
+
+    private void purchaseStockButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_purchaseStockButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_purchaseStockButtonActionPerformed
+
+    private void stockDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockDetailsButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_stockDetailsButtonActionPerformed
+
+    private void signOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signOutButtonActionPerformed
+        WelcomeMain obj1 = new WelcomeMain();
+        obj1.setVisible(true);
+        this.dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_signOutButtonActionPerformed
+
+    private void submitHireButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitHireButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitHireButtonActionPerformed
+
+    private void itemNumberTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemNumberTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itemNumberTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +224,23 @@ public class PurchaseStock extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton discardHireButton;
+    private javax.swing.JButton hireButton;
+    private javax.swing.JButton homeButton;
+    private javax.swing.JLabel itemManufacturerLabel;
+    private javax.swing.JTextField itemManufacturerTextField;
+    private javax.swing.JLabel itemModelLabel;
+    private javax.swing.JTextField itemModelTextField;
+    private javax.swing.JLabel itemNumberLabel;
+    private javax.swing.JTextField itemNumberTextField;
+    private javax.swing.JLabel itemQuantityLabel;
+    private javax.swing.JSpinner itemQuantitySpinner;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel purchaseItemLabel;
+    private javax.swing.JButton purchaseStockButton;
+    private javax.swing.JButton signOutButton;
+    private javax.swing.JButton stockDetailsButton;
+    private javax.swing.JButton submitHireButton;
+    private javax.swing.JButton transferStockButton;
     // End of variables declaration//GEN-END:variables
 }
