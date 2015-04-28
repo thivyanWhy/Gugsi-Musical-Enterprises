@@ -5,12 +5,14 @@
  */
 package AppPackage;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BLACKOUT
  */
 public class StaffLogin extends javax.swing.JFrame {
-
+private static int actionINT = 4;
     /**
      * Creates new form StaffLogin
      */
@@ -34,6 +36,7 @@ public class StaffLogin extends javax.swing.JFrame {
         staffPasswordField = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         homeButton = new javax.swing.JButton();
+        staffLoginButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Staff Login");
@@ -77,6 +80,15 @@ public class StaffLogin extends javax.swing.JFrame {
         });
         getContentPane().add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        staffLoginButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        staffLoginButton.setText("Login");
+        staffLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                staffLoginButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(staffLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, -1, -1));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -94,6 +106,38 @@ public class StaffLogin extends javax.swing.JFrame {
         obj1.setVisible(true);
             this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_homeButtonActionPerformed
+
+    private void staffLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffLoginButtonActionPerformed
+        String usernameCEO = staffUsernameTextField.getText();
+        String passwordCEO = new String (staffPasswordField.getPassword());
+        //do{
+            
+            if(usernameCEO.equalsIgnoreCase("GPoravi") && passwordCEO.equals("devil")){
+                    CEOMain obj = new CEOMain();
+                    obj.setVisible(true);
+                        this.dispose();
+                }
+            else{
+                JOptionPane.showMessageDialog(this,"Invalid username or password");
+                    staffUsernameTextField.setText("");
+                    staffPasswordField.setText("");
+            }
+            
+        //}while()
+            
+
+                    
+             
+                
+                
+            
+  
+            
+        
+        
+       
+        // TODO add your handling code here:
+    }//GEN-LAST:event_staffLoginButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -133,6 +177,7 @@ public class StaffLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton staffLoginButton;
     private javax.swing.JLabel staffLoginLabel;
     private javax.swing.JPasswordField staffPasswordField;
     private javax.swing.JLabel staffPasswordLabel;

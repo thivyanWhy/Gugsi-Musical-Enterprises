@@ -34,6 +34,7 @@ public class CustomerLogin extends javax.swing.JFrame {
         customerPasswordField = new javax.swing.JPasswordField();
         customerPasswordLabel = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        customerLoginButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Customer Login");
@@ -76,6 +77,15 @@ public class CustomerLogin extends javax.swing.JFrame {
         getContentPane().add(customerPasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 10, 10));
 
+        customerLoginButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        customerLoginButton.setText("Login");
+        customerLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customerLoginButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(customerLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, -1, -1));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -93,6 +103,10 @@ public class CustomerLogin extends javax.swing.JFrame {
     private void customerPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerPasswordFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_customerPasswordFieldActionPerformed
+
+    private void customerLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerLoginButtonActionPerformed
+                // TODO add your handling code here:
+    }//GEN-LAST:event_customerLoginButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,6 +144,7 @@ public class CustomerLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton customerLoginButton;
     private javax.swing.JLabel customerLoginLabel;
     private javax.swing.JPasswordField customerPasswordField;
     private javax.swing.JLabel customerPasswordLabel;

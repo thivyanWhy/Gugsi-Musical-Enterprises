@@ -33,26 +33,27 @@ public class WelcomeMain extends javax.swing.JFrame {
         titleLabel = new javax.swing.JLabel();
         categoryComboBox = new javax.swing.JComboBox();
         sortComboBox = new javax.swing.JComboBox();
-        displayAmountComboBox = new javax.swing.JComboBox();
+        priceSlider = new javax.swing.JSlider();
+        homeButton = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
         jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        priceSlider = new javax.swing.JSlider();
-        homeButton = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Welcome to GME");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        staffLoginButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
         staffLoginButton.setText("Staff Login");
         staffLoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         staffLoginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -62,6 +63,7 @@ public class WelcomeMain extends javax.swing.JFrame {
         });
         getContentPane().add(staffLoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 0, 127, -1));
 
+        customerLoginButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
         customerLoginButton.setText("Customer Login");
         customerLoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         customerLoginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +84,8 @@ public class WelcomeMain extends javax.swing.JFrame {
         titleLabel.setText("Gugsi Musical Enterprises");
         getContentPane().add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 830, -1));
 
-        categoryComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        categoryComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        categoryComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Acoustic guitars", "Electric guitars", "Amplifiers", "Picks" }));
         categoryComboBox.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         categoryComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,46 +94,14 @@ public class WelcomeMain extends javax.swing.JFrame {
         });
         getContentPane().add(categoryComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, -1, -1));
 
-        sortComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        sortComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
+        sortComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ratings", "Name(A - Z)", "Price (Low > High)", "Price (High > Low)" }));
         sortComboBox.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(sortComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
+        getContentPane().add(sortComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
 
-        displayAmountComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        displayAmountComboBox.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(displayAmountComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, -1, -1));
-
-        jLabel12.setText("jLabel12");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, 140, 110));
-
-        jLabel14.setText("jLabel12");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 140, 110));
-
-        jLabel15.setText("jLabel12");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 140, 110));
-
-        jLabel16.setText("jLabel12");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 140, 110));
-
-        jLabel17.setText("jLabel12");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, 140, 110));
-
-        jLabel18.setText("jLabel12");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 140, 110));
-
-        jLabel19.setText("jLabel12");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 140, 110));
-
-        jLabel20.setText("jLabel12");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 140, 110));
-
-        jLabel21.setText("jLabel12");
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, 140, 110));
-
-        jLabel13.setText("jLabel12");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 210, 140, 110));
-
+        priceSlider.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
         priceSlider.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(priceSlider, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, -1, -1));
+        getContentPane().add(priceSlider, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
 
         homeButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         homeButton.setText("GME");
@@ -141,6 +112,40 @@ public class WelcomeMain extends javax.swing.JFrame {
         });
         getContentPane().add(homeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 10, 10));
+
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        jLabel12.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel12);
+
+        jLabel16.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel16);
+
+        jLabel17.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel17);
+
+        jLabel15.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel15);
+
+        jLabel14.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel14);
+
+        jLabel18.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel18);
+
+        jLabel19.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel19);
+
+        jLabel20.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel20);
+
+        jLabel21.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel21);
+
+        jLabel13.setText("jLabel12");
+        jScrollPane1.setViewportView(jLabel13);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 840, 410));
 
         setSize(new java.awt.Dimension(836, 635));
         setLocationRelativeTo(null);
@@ -206,7 +211,6 @@ public class WelcomeMain extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox categoryComboBox;
     private javax.swing.JButton customerLoginButton;
-    private javax.swing.JComboBox displayAmountComboBox;
     private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -219,6 +223,7 @@ public class WelcomeMain extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSlider priceSlider;
     private javax.swing.JLabel quoteLabel;
     private javax.swing.JComboBox sortComboBox;
