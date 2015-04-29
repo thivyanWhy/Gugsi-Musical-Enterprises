@@ -64,6 +64,11 @@ public class CEOMain extends javax.swing.JFrame {
 
         hireButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
         hireButton.setText("Hire");
+        hireButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hireButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(hireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
 
         purchaseStockButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
@@ -125,6 +130,13 @@ public class CEOMain extends javax.swing.JFrame {
     private void stockDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockDetailsButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_stockDetailsButtonActionPerformed
+
+    private void hireButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hireButtonActionPerformed
+        
+        Hire obj = new Hire();
+        obj.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_hireButtonActionPerformed
 
     /**
      * @param args the command line arguments

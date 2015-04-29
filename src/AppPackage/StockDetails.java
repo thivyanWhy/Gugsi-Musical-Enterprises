@@ -56,7 +56,7 @@ public class StockDetails extends javax.swing.JFrame {
         getContentPane().add(stockMountLaviniaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, -1, -1));
 
         stockWellawattaLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        stockWellawattaLabel.setText("Stock in Wellawatta");
+        stockWellawattaLabel.setText("Stock in Wellawatte");
         getContentPane().add(stockWellawattaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, -1, -1));
 
         stockWarehouseLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N

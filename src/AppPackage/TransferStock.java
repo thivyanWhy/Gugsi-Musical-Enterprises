@@ -127,7 +127,7 @@ public class TransferStock extends javax.swing.JFrame {
         getContentPane().add(discardHireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 580, -1, -1));
 
         transferBranchComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        transferBranchComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Wellawatta", "Mount Lavinia" }));
+        transferBranchComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Wellawatte", "Mount Lavinia" }));
         getContentPane().add(transferBranchComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, -1));
 
         itemQuantitySpinner.setFont(new java.awt.Font("Nanum Myeongjo", 0, 13)); // NOI18N
