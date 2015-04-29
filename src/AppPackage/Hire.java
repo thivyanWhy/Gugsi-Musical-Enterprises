@@ -5,11 +5,6 @@
  */
 package AppPackage;
 
-import com.gme.Tables.Employee;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author BLACKOUT
@@ -48,16 +43,16 @@ public class Hire extends javax.swing.JFrame {
         employeeTitleLabel = new javax.swing.JLabel();
         employeeBranchLabel = new javax.swing.JLabel();
         employeeGenderLabel = new javax.swing.JLabel();
-        lastNameTextField = new javax.swing.JTextField();
-        nicNumberTextField = new javax.swing.JTextField();
-        firstNameTextField = new javax.swing.JTextField();
+        employeeNameTextField = new javax.swing.JTextField();
+        employeeNICTextField = new javax.swing.JTextField();
+        employeeDOBTextField = new javax.swing.JTextField();
+        employeePhoneNoTextField = new javax.swing.JTextField();
+        employeeIDTextField = new javax.swing.JTextField();
         employeeGenderComboBox = new javax.swing.JComboBox();
         employeeBranchComboBox = new javax.swing.JComboBox();
         employeeTitleComboBox = new javax.swing.JComboBox();
         discardHireButton = new javax.swing.JButton();
         submitHireButton = new javax.swing.JButton();
-        usernameTextField = new javax.swing.JTextField();
-        passwordTextField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hire Employee");
@@ -120,55 +115,61 @@ public class Hire extends javax.swing.JFrame {
         getContentPane().add(employeeHireLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         employeePhoneNoLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeePhoneNoLabel.setText("Password");
-        getContentPane().add(employeePhoneNoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
+        employeePhoneNoLabel.setText("Employee Phone No");
+        getContentPane().add(employeePhoneNoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
 
         employeeIDLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeIDLabel.setText("First Name");
-        getContentPane().add(employeeIDLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+        employeeIDLabel.setText("Employee ID");
+        getContentPane().add(employeeIDLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         employeeNameLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeNameLabel.setText("Last Name");
-        getContentPane().add(employeeNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        employeeNameLabel.setText("Employee Name");
+        getContentPane().add(employeeNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         employeeNICLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeNICLabel.setText("NIC Number");
-        getContentPane().add(employeeNICLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+        employeeNICLabel.setText("Employee NIC");
+        getContentPane().add(employeeNICLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
 
         employeeDOBLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeDOBLabel.setText("Username");
-        getContentPane().add(employeeDOBLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+        employeeDOBLabel.setText("Employee Date of Birth");
+        getContentPane().add(employeeDOBLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
 
         employeeTitleLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeTitleLabel.setText("Employee Job Title");
-        getContentPane().add(employeeTitleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
+        getContentPane().add(employeeTitleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
 
         employeeBranchLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeBranchLabel.setText("Employee Branch");
-        getContentPane().add(employeeBranchLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, -1, -1));
+        getContentPane().add(employeeBranchLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
 
         employeeGenderLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeGenderLabel.setText("Employee Gender");
-        getContentPane().add(employeeGenderLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
+        getContentPane().add(employeeGenderLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, -1));
 
-        lastNameTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        lastNameTextField.addActionListener(new java.awt.event.ActionListener() {
+        employeeNameTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        getContentPane().add(employeeNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 320, -1));
+
+        employeeNICTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        getContentPane().add(employeeNICTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 320, -1));
+
+        employeeDOBTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        employeeDOBTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lastNameTextFieldActionPerformed(evt);
+                employeeDOBTextFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(lastNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 320, -1));
+        getContentPane().add(employeeDOBTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 320, -1));
 
-        nicNumberTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        getContentPane().add(nicNumberTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 320, -1));
+        employeePhoneNoTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        getContentPane().add(employeePhoneNoTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 320, -1));
 
-        firstNameTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        firstNameTextField.addActionListener(new java.awt.event.ActionListener() {
+        employeeIDTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
+        employeeIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                firstNameTextFieldActionPerformed(evt);
+                employeeIDTextFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(firstNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 320, -1));
+        getContentPane().add(employeeIDTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 320, -1));
 
         employeeGenderComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeGenderComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Female", "Male", "Transgender", "Other" }));
@@ -177,15 +178,15 @@ public class Hire extends javax.swing.JFrame {
                 employeeGenderComboBoxActionPerformed(evt);
             }
         });
-        getContentPane().add(employeeGenderComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 160, 30));
+        getContentPane().add(employeeGenderComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 337, 160, 30));
 
         employeeBranchComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeBranchComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Wellawatte", "Mount Lavinia", "Warehouse" }));
-        getContentPane().add(employeeBranchComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 470, -1, -1));
+        employeeBranchComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Wellawatta", "Mount Lavinia", "Warehouse" }));
+        getContentPane().add(employeeBranchComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 520, -1, -1));
 
         employeeTitleComboBox.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeTitleComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Manager", "Salesman", "General Labor" }));
-        getContentPane().add(employeeTitleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, -1, -1));
+        getContentPane().add(employeeTitleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
 
         discardHireButton.setFont(new java.awt.Font("Nanum Myeongjo", 0, 15)); // NOI18N
         discardHireButton.setText("Discard");
@@ -199,20 +200,6 @@ public class Hire extends javax.swing.JFrame {
             }
         });
         getContentPane().add(submitHireButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 580, -1, -1));
-
-        usernameTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameTextFieldActionPerformed(evt);
-            }
-        });
-        getContentPane().add(usernameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 320, 30));
-
-        passwordTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordTextFieldActionPerformed(evt);
-            }
-        });
-        getContentPane().add(passwordTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 320, 30));
 
         pack();
         setLocationRelativeTo(null);
@@ -242,53 +229,21 @@ public class Hire extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_transferStockButtonActionPerformed
 
-    private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
+    private void employeeDOBTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDOBTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_firstNameTextFieldActionPerformed
+    }//GEN-LAST:event_employeeDOBTextFieldActionPerformed
+
+    private void employeeIDTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeIDTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeIDTextFieldActionPerformed
 
     private void employeeGenderComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeGenderComboBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeGenderComboBoxActionPerformed
 
     private void submitHireButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitHireButtonActionPerformed
-        String firstName = firstNameTextField.getText();
-        String lastName = lastNameTextField.getText();
-        String nicNumber = nicNumberTextField.getText();
-        String username = usernameTextField.getText();
-        String password = passwordTextField.getText();
-        String job_title = employeeTitleComboBox.getSelectedItem().toString();
-        String office = employeeBranchComboBox.getSelectedItem().toString();
-        
-        Employee emp = new Employee(firstName, lastName, nicNumber, username, password, job_title, office); //Sets all the values of the text fields to the employee class
-        
-        try {
-            
-            emp.addNewEmployee(); //Adds new employee
-            
-            //Closes current window and reopens CEO window
-            CEOMain obj = new CEOMain();
-            obj.setVisible(true);
-            this.dispose();
-        } catch (ClassNotFoundException ex) {
-            
-            Logger.getLogger(Hire.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            
-            Logger.getLogger(Hire.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_submitHireButtonActionPerformed
-
-    private void usernameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameTextFieldActionPerformed
-
-    private void passwordTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passwordTextFieldActionPerformed
-
-    private void lastNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lastNameTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -330,27 +285,27 @@ public class Hire extends javax.swing.JFrame {
     private javax.swing.JComboBox employeeBranchComboBox;
     private javax.swing.JLabel employeeBranchLabel;
     private javax.swing.JLabel employeeDOBLabel;
+    private javax.swing.JTextField employeeDOBTextField;
     private javax.swing.JComboBox employeeGenderComboBox;
     private javax.swing.JLabel employeeGenderLabel;
     private javax.swing.JLabel employeeHireLabel;
     private javax.swing.JLabel employeeIDLabel;
+    private javax.swing.JTextField employeeIDTextField;
     private javax.swing.JLabel employeeNICLabel;
+    private javax.swing.JTextField employeeNICTextField;
     private javax.swing.JLabel employeeNameLabel;
+    private javax.swing.JTextField employeeNameTextField;
     private javax.swing.JLabel employeePhoneNoLabel;
+    private javax.swing.JTextField employeePhoneNoTextField;
     private javax.swing.JComboBox employeeTitleComboBox;
     private javax.swing.JLabel employeeTitleLabel;
-    private javax.swing.JTextField firstNameTextField;
     private javax.swing.JButton hireButton;
     private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField lastNameTextField;
-    private javax.swing.JTextField nicNumberTextField;
-    private javax.swing.JTextField passwordTextField;
     private javax.swing.JButton purchaseStockButton;
     private javax.swing.JButton signOutButton;
     private javax.swing.JButton stockDetailsButton;
     private javax.swing.JButton submitHireButton;
     private javax.swing.JButton transferStockButton;
-    private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
 }

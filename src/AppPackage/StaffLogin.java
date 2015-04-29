@@ -5,10 +5,6 @@
  */
 package AppPackage;
 
-import com.gme.Tables.Employee;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -112,60 +108,35 @@ private static int actionINT = 4;
     }//GEN-LAST:event_homeButtonActionPerformed
 
     private void staffLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffLoginButtonActionPerformed
-        String username = staffUsernameTextField.getText();
-        String password = new String (staffPasswordField.getPassword());
-        Employee emp = new Employee();
+        String usernameCEO = staffUsernameTextField.getText();
+        String passwordCEO = new String (staffPasswordField.getPassword());
         //do{
-    try {
-        if(emp.validateLogin(username, password)){ //Validates if the user has entered the correct username and password
             
-            String job_title = emp.getTitle();
-            String office = emp.getOffice();
-            
-            if(job_title.equals("CEO")){ //Actions when the user is the CEO
-                
-                CEOMain obj = new CEOMain();
-                obj.setVisible(true);
-                this.dispose();
-            }else if(job_title.equals("Manager")){ //Actions when the user is a Manager
-                
-                if(office.equals("Wellawatte")){ //If the Manager is working at the Wellawatte branch
-                    
-                    ManagerMain obj = new ManagerMain();
+            if(usernameCEO.equalsIgnoreCase("GPoravi") && passwordCEO.equals("devil")){
+                    CEOMain obj = new CEOMain();
                     obj.setVisible(true);
-                    this.dispose();
-                }else if(office.equals("Mount Lavinia")){ //If the Manager is workig at the ML branch
-                    
-                    ManagerMT obj = new ManagerMT();
-                    obj.setVisible(true);
-                    this.dispose();
+                        this.dispose();
                 }
-            }else if(job_title.equals("Salesman")){//Actions when the user is a salesman
-                
-                if(office.equals("Wellawatte")){
-                    
-                    Salesmen obj = new Salesmen();
-                    obj.setVisible(true);
-                    this.dispose();
-                }else if(office.equals("Mount Lavinia")){
-                    
-                    SalesmenMT obj = new SalesmenMT();
-                    obj.setVisible(true);
-                    this.dispose();
-                }
+            else{
+                JOptionPane.showMessageDialog(this,"Invalid username or password");
+                    staffUsernameTextField.setText("");
+                    staffPasswordField.setText("");
             }
-        }
-        else{
-            JOptionPane.showMessageDialog(this,"Invalid username or password");
-            staffUsernameTextField.setText("");
-            staffPasswordField.setText("");
-        }
+            
+        //}while()
+            
+
+                    
+             
+                
+                
+            
+  
+            
+        
+        
        
-    } catch (ClassNotFoundException ex) {
-        Logger.getLogger(StaffLogin.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (SQLException ex) {
-        Logger.getLogger(StaffLogin.class.getName()).log(Level.SEVERE, null, ex);
-    }
+        // TODO add your handling code here:
     }//GEN-LAST:event_staffLoginButtonActionPerformed
 
     /**
