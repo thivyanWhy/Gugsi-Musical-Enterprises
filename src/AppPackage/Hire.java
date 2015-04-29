@@ -115,23 +115,23 @@ public class Hire extends javax.swing.JFrame {
         getContentPane().add(employeeHireLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         employeePhoneNoLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeePhoneNoLabel.setText("Employee Phone No");
+        employeePhoneNoLabel.setText("Telephone Number");
         getContentPane().add(employeePhoneNoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
 
         employeeIDLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeIDLabel.setText("Employee ID");
+        employeeIDLabel.setText("First Name");
         getContentPane().add(employeeIDLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         employeeNameLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeNameLabel.setText("Employee Name");
+        employeeNameLabel.setText("Last Name");
         getContentPane().add(employeeNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         employeeNICLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeNICLabel.setText("Employee NIC");
+        employeeNICLabel.setText("NIC Number");
         getContentPane().add(employeeNICLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
 
         employeeDOBLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeDOBLabel.setText("Employee Date of Birth");
+        employeeDOBLabel.setText("Date of Birth");
         getContentPane().add(employeeDOBLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
 
         employeeTitleLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
@@ -143,7 +143,7 @@ public class Hire extends javax.swing.JFrame {
         getContentPane().add(employeeBranchLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
 
         employeeGenderLabel.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        employeeGenderLabel.setText("Employee Gender");
+        employeeGenderLabel.setText("Gender");
         getContentPane().add(employeeGenderLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, -1));
 
         employeeNameTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
@@ -161,7 +161,7 @@ public class Hire extends javax.swing.JFrame {
         getContentPane().add(employeeDOBTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 320, -1));
 
         employeePhoneNoTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
-        getContentPane().add(employeePhoneNoTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 320, -1));
+        getContentPane().add(employeePhoneNoTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 320, -1));
 
         employeeIDTextField.setFont(new java.awt.Font("Nanum Myeongjo", 0, 20)); // NOI18N
         employeeIDTextField.addActionListener(new java.awt.event.ActionListener() {
